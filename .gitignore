@@ -1,11 +1,39 @@
+# ============================================================
+# Bases de dados pesadas / regeneráveis (NÃO versionar)
+# ============================================================
 microdados_encceja_2024.zip
+encceja_2024_limpo_full.csv      # base completa; a amostra de referência É versionada
+datatran2025.csv                 # base bruta do trânsito (pesada)
+Base_de_dados.zip
 *.zip
+*.parquet
+
+# Vídeos
 *.mp4
+
+# Roteiro do ENCCEJA (removido do repo a pedido)
 Roteiro_Apresentacao.md
 
-encceja_2024_limpo_full.csv
+# ============================================================
+# Credenciais — NUNCA versionar
+# ============================================================
+.env
+*.env
+credentials.json
+secrets.*
 
-# ===== Python =====
+# ============================================================
+# AV2 — Data Lake / Saúde
+# Camadas intermediárias regeneráveis; ouro/ e dw/ ficam versionados
+# ============================================================
+saude-datalake/data/bronze/
+saude-datalake/data/prata/
+minio-data/
+minio_data/
+
+# ============================================================
+# Python
+# ============================================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -13,23 +41,26 @@ __pycache__/
 build/
 dist/
 *.egg-info/
-
-# Ambientes virtuais
 .venv/
 venv/
 env/
 ENV/
 
-# ===== Node (caso use o gerador de slides/relatório) =====
+# ============================================================
+# Node (gerador de slides/relatório)
+# ============================================================
 node_modules/
 package-lock.json
 
-# ===== Artefatos temporários de conversão/preview =====
-*.pdf
+# ============================================================
+# Artefatos temporários de conversão/preview
+# ============================================================
 slide-*.jpg
 fig_b64.txt
 
-# ===== Editores / SO =====
+# ============================================================
+# Editores / SO
+# ============================================================
 .vscode/
 .idea/
 .DS_Store

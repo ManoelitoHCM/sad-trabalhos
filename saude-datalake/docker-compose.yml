@@ -1,0 +1,27 @@
+# Data Lake S3-compatível para o Trabalho AV2 (HUOL).
+# Subir:    docker compose up -d
+# Console:  http://localhost:9001   (usuário/senha: minioadmin / minioadmin)
+# API S3:   http://localhost:9000
+#
+# Depois de subir, rode:  python scripts/05_upload_minio.py
+services:
+  minio:
+    image: minio/minio:latest
+    container_name: datalake-huol-minio
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"   # API S3
+      - "9001:9001"   # Console web
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  minio_data:

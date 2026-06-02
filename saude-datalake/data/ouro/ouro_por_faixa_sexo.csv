@@ -1,0 +1,15 @@
+faixa_etaria,sexo,internacoes
+0-12 (Criança),Feminino,608
+0-12 (Criança),Masculino,798
+13-17 (Adolescente),Feminino,255
+13-17 (Adolescente),Masculino,220
+18-29 (Jovem adulto),Feminino,771
+18-29 (Jovem adulto),Masculino,586
+30-44 (Adulto),Feminino,1686
+30-44 (Adulto),Masculino,1287
+45-59 (Meia-idade),Feminino,2077
+45-59 (Meia-idade),Masculino,1797
+60-74 (Idoso),Feminino,1922
+60-74 (Idoso),Masculino,2367
+75+ (Idoso longevo),Feminino,818
+75+ (Idoso longevo),Masculino,852
