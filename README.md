@@ -1,6 +1,6 @@
 # SAD — Trabalhos de Sistemas de Apoio à Decisão
 
-Monorepo com os trabalhos da disciplina **Sistemas de Apoio à Tomada de Decisão** (Sistemas de Informação). Cada projeto aplica uma técnica diferente de apoio à decisão a uma base de dados pública real, com código, relatório, roteiro de apresentação e slides.
+Monorepo com os trabalhos da disciplina **Sistemas de Apoio à Tomada de Decisão** (Sistemas de Informação). Cada projeto aplica uma técnica diferente de apoio à decisão a uma base de dados pública real, com código, relatório slides.
 
 ## Trabalhos
 
@@ -17,10 +17,7 @@ sad-trabalhos/
 ├── encceja-knn/                ← Trabalho 1
 ├── transito-arvore-decisao/    ← Trabalho 2
 ├── saude-datalake/             ← Trabalho 3
-└── README.md                   ← este arquivo
 ```
-> Ajuste os nomes das pastas conforme o seu repositório.
-
 ## Requisitos gerais
 
 - **Python 3.10+**. Cada projeto tem seu próprio `requirements.txt` (`pip install -r requirements.txt`).
@@ -50,7 +47,7 @@ O K-NN é implementado **do zero em NumPy** (sem caixa-preta), com **normalizaç
 | `preparar_dados.py` | Pipeline de higienização que gera a base a partir dos microdados |
 | `encceja_2024_referencia.csv` | Base de referência (amostra estratificada de ~45.000 participantes) |
 | `Relatorio_ENCCEJA_KNN.docx` | Relatório do processo de desenvolvimento |
-| `Apresentacao_ENCCEJA_KNN.pptx` · `Roteiro_Apresentacao.md` | Slides e roteiro do vídeo |
+| `Apresentacao_ENCCEJA_KNN.pptx` | Slides do vídeo |
 
 **Execução**
 ```bash
@@ -121,7 +118,6 @@ saude-datalake/
 ├── docker-compose.yml
 ├── requirements.txt
 ├── Relatorio_AV2_DataLake_Saude.docx
-├── Roteiro_Apresentacao_AV2.md
 └── Apresentacao_AV2_DataLake_Saude.pptx
 ```
 As pastas `data/` (bronze/prata/ouro/dw) e `figuras/` são **geradas pelos scripts**.
