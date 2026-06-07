@@ -11,7 +11,10 @@ Base_de_dados.zip
 # Vídeos
 *.mp4
 
-# Roteiro do ENCCEJA (removido do repo a pedido)
+# Documento
+*.docx
+
+# Roteiro de apresentação
 Roteiro_Apresentacao.md
 
 # ============================================================
@@ -30,6 +33,12 @@ saude-datalake/data/bronze/
 saude-datalake/data/prata/
 minio-data/
 minio_data/
+
+# ============================================================
+# AV2 — ENEM Genetico
+# ============================================================
+microdados_enem_2024/
+saida/
 
 # ============================================================
 # Python
